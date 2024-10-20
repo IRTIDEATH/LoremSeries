@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import FloatingNav from "@/components/FloatingNav";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,9 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-y-scroll`}
       >
-        {children}
+        <FloatingNav/>
+        <main className="mx-auto h-full min-h-screen w-full min-w-0 px-4 pb-24 pt-16 md:max-w-2xl">
+          {children}
+        </main>
       </body>
     </html>
   );
