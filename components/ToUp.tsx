@@ -15,7 +15,6 @@ const ToUp = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Jika scroll lebih dari 100px, tampilkan tombol
       if (window.scrollY > 100) {
         setIsVisible(true);
       } else {
@@ -23,10 +22,8 @@ const ToUp = () => {
       }
     };
 
-    // Tambahkan event listener untuk scroll
     window.addEventListener("scroll", handleScroll);
 
-    // Hapus event listener saat komponen di-unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -34,19 +31,19 @@ const ToUp = () => {
 
   useEffect(() => {
     if (isVisible) {
-      controls.start({ opacity: 1, y: 0 });
+      controls.start({ opacity: 1 });
     } else {
-      controls.start({ opacity: 0, y: 0 }); // Mengubah posisi untuk animasi keluar
+      controls.start({ opacity: 0 });
     }
   }, [isVisible, controls]);
 
   return (
     <motion.button
       onClick={handleClick}
-      initial={{ opacity: 0, y: 0 }} // Posisi awal tombol
+      initial={{ opacity: 0 }}
       animate={controls}
-      exit={{ opacity: 0, y: 0 }} // Animasi saat menghilang
-      transition={{ duration: 0.3, ease: "easeInOut" }} // Durasi transisi
+      exit={{ opacity: 0 }} 
+      transition={{ duration: 0.3, ease: "easeInOut" }}
       className="group fixed bottom-8 right-8 p-3 border border-secondary rounded-full flex justify-center items-center bg-white/10 backdrop-blur-md hover:bg-white/15 transition">
       <ChevronUp className="group-hover:-translate-y-1 transition" />
     </motion.button>
