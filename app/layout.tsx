@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import FloatingNav from "@/components/FloatingNav";
+import Navbar from "@/components/Navbar";
+import ToUp from "@/components/ToUp";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -27,12 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-y-scroll`}
-      >
-        <FloatingNav/>
-        <main className="mx-auto h-full min-h-screen w-full min-w-0 px-4 pb-24 pt-16 md:max-w-2xl">
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative overflow-y-scroll`}>
+        <Navbar />
+        <main className="mx-auto min-h-screen w-full min-w-0 px-4 pb-24 pt-16 md:max-w-2xl h-[300vh]">
           {children}
         </main>
+
+        <ToUp />
       </body>
     </html>
   );
