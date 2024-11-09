@@ -9,6 +9,7 @@ import {
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Menu } from "lucide-react";
+import { NavItemProps } from "@/types/constants/navitem";
 
 export const FloatingNav = ({
   navItems,
@@ -61,7 +62,7 @@ export const FloatingNav = ({
           className
         )}
       >
-        {navItems.map((navItem: any, idx: number) => (
+        {navItems.map((navItem: NavItemProps, idx: number) => (
           <Link
             key={`link=${idx}`}
             href={navItem.link}
