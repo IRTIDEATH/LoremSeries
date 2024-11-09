@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ToUp from "@/components/ToUp";
 import {Inter} from "next/font/google"
+import { BackgroundBeamsWithCollision } from "@/components/ui/Background-meteor";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,7 +25,9 @@ export default function RootLayout({
         className={`${inter.className} relative antialiased`}>
         <Navbar />
         <main>
-          {children}
+          <BackgroundBeamsWithCollision>
+            {children}
+          </BackgroundBeamsWithCollision>
         </main>
 
         <ToUp />
