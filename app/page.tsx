@@ -3,7 +3,7 @@ import Hero from "@/components/pages/Hero";
 
 export default function Home() {
   return (
-    <div className="w-full mx-auto px-20">
+    <div className="w-full mx-auto px-8">
       <Hero/>
       <CarouselContainer/>
     </div>

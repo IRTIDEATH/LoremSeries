@@ -2,7 +2,7 @@ import { TextEffect } from "../ui/Text-effect";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex justify-center items-center">
+    <section id="home" className="min-h-screen flex justify-center items-center">
       <div className="items-center text-center space-y-2">
         <TextEffect per="word" as="h1" preset="blur" className="text-4xl">
           Lorem Your Ipsum

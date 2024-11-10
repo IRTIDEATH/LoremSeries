@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  color: white;
-  @apply bg-black;
+* {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+}
+
+body {
+  color: white;
+  @apply bg-black;  
 }
 
 @layer utilities {

@@ -3,7 +3,7 @@ import CarouselContainer from "../Carousel"
 
 const Gallery = () => {
   return (
-    <section>
+    <section id="gallery">
         <CarouselContainer/>
     </section>
   )
