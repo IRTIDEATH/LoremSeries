@@ -10,10 +10,10 @@ import {
 
 const CarouselContainer = () => {
   return (
-    <Carousel>
+    <Carousel className="max-w-3xl">
       <CarouselNext />
       <CarouselPrevious />
-      <div className="relative ">
+      <div className="relative">
         <CarouselMainContainer className="h-60">
           {Array.from({ length: 5 }).map((_, index) => (
             <SliderMainItem key={index} className="bg-transparent">
