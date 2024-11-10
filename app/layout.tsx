@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import ToUp from "@/components/ToUp";
+// import ToUp from "@/components/ToUp";
 import {Inter} from "next/font/google"
 import { BackgroundBeamsWithCollision } from "@/components/ui/Background-meteor";
 
