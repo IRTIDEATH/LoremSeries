@@ -30,7 +30,7 @@ export default function RootLayout({
           </BackgroundBeamsWithCollision>
         </main>
 
-        <ToUp />
+        {/* <ToUp /> */}
       </body>
     </html>
   );
