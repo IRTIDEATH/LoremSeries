@@ -15,10 +15,10 @@ const Hero = () => {
           illo, rerum totam modi minima aliquam.
         </p>
         <div className="flex items-center space-x-2 pt-3 justify-center">
-          <button className="px-4 py-2 rounded-md border border-black bg-primary text-black text-sm     hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+          <button className="px-4 py-2 rounded-md bg-yellow text-black text-sm transition duration-200">
             Get Started
           </button>
-          <button className="px-4 py-2 rounded-md border border-black bg-white text-black text-sm     hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
+          <button className="px-4 py-2 rounded-md bg-white text-black text-sm hover:shadow-[4px_4px_0px_0px_gray] transition duration-200">
             Lorem Ipsum Docs
           </button>
         </div>
