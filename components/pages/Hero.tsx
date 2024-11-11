@@ -22,8 +22,8 @@ const Hero = () => {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
           illo, rerum totam modi minima aliquam.
         </p>
-        <div className="flex items-center space-x-2 pt-3 justify-center">
-          <Button Icon={ArrowRightIcon} iconPlacement="right" variant="expandIcon" className="bg-yellow">Get Started</Button>
+        <div className="flex items-center pt-3 justify-center space-x-3">
+          <Button variant="outline" className="text-white hover:text-yellow hover:border-yellow transition duration-200">Get Started</Button>
           <Button variant="shadowhover" className="">Lorem Docs</Button>
         </div>
       </div>
