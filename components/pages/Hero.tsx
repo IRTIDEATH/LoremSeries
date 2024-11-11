@@ -1,15 +1,18 @@
-import { TextEffect } from "../ui/Text-effect";
+import { Button } from "../ui/button";
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex justify-center items-center">
-      <div className="items-center text-center space-y-2">
-        <TextEffect per="word" as="h1" preset="blur" className="text-4xl">
-          Lorem Your Ipsum
-        </TextEffect>
-        <TextEffect per="word" as="h1" preset="blur" className="text-3xl">
-          Dolor Amet
-        </TextEffect>
+    <section
+      id="home"
+      className="min-h-screen flex justify-center items-center"
+    >
+      <div className="text-center space-y-2">
+          <h1 className="text-4xl">Lorem Your Ipsum</h1>
+          <div className="flex items-center justify-center">
+            <h1 className="bg-[#636363] text-3xl px-5 py-3">
+              Dolor Amet
+            </h1>
+          </div>
         <p className="max-w-lg pt-2">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
           illo, rerum totam modi minima aliquam.
