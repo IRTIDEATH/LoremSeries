@@ -18,7 +18,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         expandIcon:
-          "group relative text-primary-foreground bg-primary hover:bg-primary/90",
+          "group relative text-black",
         ringHover:
           "bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:ring-2 hover:ring-primary/90 hover:ring-offset-2",
         shine:
@@ -31,6 +31,7 @@ const buttonVariants = cva(
           "relative after:absolute after:bg-primary after:bottom-2 after:h-[1px] after:w-2/3 after:origin-bottom-left after:scale-x-100 hover:after:origin-bottom-right hover:after:scale-x-0 after:transition-transform after:ease-in-out after:duration-300",
         linkHover2:
           "relative after:absolute after:bg-primary after:bottom-2 after:h-[1px] after:w-2/3 after:origin-bottom-right after:scale-x-0 hover:after:origin-bottom-left hover:after:scale-x-100 after:transition-transform after:ease-in-out after:duration-300",
+        shadowhover: "rounded-md bg-white hover:shadow-[4px_4px_0px_0px_gray] transition duration-200 text-black",
       },
       size: {
         default: "h-10 px-4 py-2",
