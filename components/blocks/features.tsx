@@ -38,7 +38,7 @@ export default function Features() {
 					</div>
 				</div>
 				<div className="relative items-start justify-start border-l-[1.2px] border-r-[1.2px] border-t-[1.2px] md:border-r-0 md:border-t-0 flex flex-col p-10 transform-gpu">
-					<Plus className="absolute bottom-[-17px] left-[-17px] text-gray w-8 h-8" />
+					<Plus className="absolute bottom-[-17px] left-[-17px] text-yellow w-8 h-8" />
 
 					<div className="flex items-center gap-2 my-1">
 						<LockClosedIcon className="w-4 h-4" />
@@ -62,7 +62,7 @@ export default function Features() {
 					</div>
 				</div>
 				<div className="relative items-start justify-start border-l-[1.2px] border-r-[1.2px] border-t-[1.2px] md:border-r-0 md:border-t-0 flex flex-col p-10 transform-gpu">
-					<Plus className="absolute bottom-[-17px] left-[-17px] text-gray w-8 h-8" />
+					<Plus className="absolute bottom-[-17px] left-[-17px] text-yellow w-8 h-8" />
 
 					<div className="flex items-center gap-2 my-1">
 						<LockClosedIcon className="w-4 h-4" />
