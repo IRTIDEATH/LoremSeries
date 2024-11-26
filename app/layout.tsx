@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 // import ToUp from "@/components/ToUp";
 import {Inter} from "next/font/google"
 import Animatecursor from "@/components/ui/Animate-cursor";
+import { BackgroundBeamsWithCollision } from "@/components/ui/Background-meteor";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -26,7 +27,9 @@ export default function RootLayout({
         <Animatecursor/>
         <Navbar />
         <main>
+          <BackgroundBeamsWithCollision>
             {children}
+          </BackgroundBeamsWithCollision>
         </main>
 
         {/* <ToUp /> */}
