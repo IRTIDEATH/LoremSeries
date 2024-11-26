@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 // import ToUp from "@/components/ToUp";
 import {Inter} from "next/font/google"
-import { BackgroundBeamsWithCollision } from "@/components/ui/Background-meteor";
+import Animatecursor from "@/components/ui/Animate-cursor";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,16 +18,15 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
-}>) {
+}>) {  
   return (
     <html lang="en">
       <body
         className={`${inter.className} relative antialiased`}>
+        <Animatecursor/>
         <Navbar />
         <main>
-          <BackgroundBeamsWithCollision>
             {children}
-          </BackgroundBeamsWithCollision>
         </main>
 
         {/* <ToUp /> */}
